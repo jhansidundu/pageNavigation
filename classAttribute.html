@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    here is class attribute
+  </title>
+
+  <style>
+    .city {
+      background-color: darkcyan;
+      font-size: 30%;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Use of The class Attribute in JavaScript</h2>
+  <p>Click the button to hide all elements with class name "city":</p>
+  <button onclick="myFunction()">hide elements</button>
+  <h2 class="city">the London</h2>
+  <p>here is london country</p>
+  <h2 class="city"> the America</h2>
+  <p>here is the America</p>
+  <h2 class="city">the India</h2>
+  <p>here is traditional India</p>
+  <script>
+    function myFunction() {
+      var x = document.getElementsByClassName("city");
+      for (let i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+
+</html>byeeee
